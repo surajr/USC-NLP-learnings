@@ -1,0 +1,51 @@
+"""
+Author: Suraj
+Course: CSCI544 - Applied NaturalLanguage Processing
+Assignment: 2
+Description: The goal of this assignment is to get some experience implementing the simple but effective machine learning model, the perceptron, and applying it to a binary text classification task (i.e., spam detection)
+filename: avg_perlearn.py - to learn the average perceptron for the given dataset
+"""
+
+1f. ham F1 score: 0.9662475181998676
+
+2. Performance of averaged perceptron on the development data with 100% of the training data
+2a. spam precision: 0.9817587802885924
+2b. spam recall: 0.9812244897959184
+2c. spam F1 score: 0.9814915623298858
+2d. ham precision: 0.9540612516644474
+2e. ham recall: 0.9553333333333334
+2f. ham F1 score: 0.954696868754164
+
+Part II.
+
+3. Performance of standard perceptron on the development data with 10% of the training data
+3a. spam precision: 0.9286304767153486
+3b. spam recall: 0.9170068027210885
+3c. spam F1 score: 0.9227820372398685
+3d. ham precision: 0.8027166882276844
+3e. ham recall: 0.8273333333333334
+3f. ham F1 score: 0.8148391332895601
+
+4. Performance of averaged perceptron on the development data with 10% of the training data
+4a. spam precision: 0.9431754874651811
+4b. spam recall: 0.9213605442176871
+4c. spam F1 score: 0.9321403991741226
+4d. ham precision: 0.8176656151419558
+4e. ham recall: 0.864
+4f. ham F1 score: 0.840194489465154
+
+Part III. You are welcome to reuse code you wrote for assignment 1,
+but we would like to know how you handled the following tasks.
+
+5. How did you calculate precision, recall and F1 score? If you used a
+separate script, please give the name of the script and describe how
+to run it.
+
+Solution: I wrote a separate script to calculate the precision and recall for spam/ham by constructing confusion matrix. 
+The script is named as evaluate.py. 
+In order to execute, give the output file as argument and the results will be displayed in the terminal.
+
+ex:
+python3 evaluate.py output_file.txt
+
+
