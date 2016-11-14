@@ -1,0 +1,38 @@
+Assignment 1 Report
+
+Name: Suraj Rajasekhar
+
+1. Performance on the development data with 100% of the training data
+1a. spam precision: 0.9922758620689656
+1b. spam recall: 0.9787755102040816
+1c. spam F1 score: 0.9854794520547945
+1d. ham precision: 0.9496774193548387
+1e. ham recall: 0.9813333333333333
+1f. ham F1 score: 0.9652459016393443
+
+2. Performance on the development data with 10% of the training data
+2a. spam precision: 0.9911225658648339
+2b. spam recall: 0.9417687074829932
+2c. spam F1 score: 0.9658155434630948
+2d. ham precision: 0.8728461081402258
+2e. ham recall: 0.9793333333333333
+2f. ham F1 score: 0.923028589381087
+
+Note: To select 10% of training data, wrote a seperate function to get random 10% of files from spam and ham folders. 
+To execute this section of code, please refer nbclassify_task2.py and nblearn_task2.py 
+
+3. Description of enhancement(s) you tried (e.g., different approach(es) to smoothing, treating common words differently, dealing with unknown words differently):
+a. Removed stop words from the spam/ham dictionary. 
+   Different words are listed in stop_words.txt 
+b. Treated words appended with special characters or numbers differently like ?word, !word, 456word, //word by removing spcial characters which doesn't add any value in classifying.
+c. Removed words of length greater than 15 from the dictionary. (Found more than 400 entries like this)
+
+Corresponding code has been uploaded in work directory as nblearn_task3.py and nbclassify_task3.py 
+
+4. Best performance results based on enhancements. Note that these could be the same or worse than the standard implementation.
+4a. spam precision: 0.9925352502073541
+4b. spam recall: 0.9768707482993197
+4c. spam F1 score: 0.9846407021393309
+4d. ham precision: 0.9454428754813864
+4e. ham recall: 0.982
+4f. ham F1 score: 0.9633747547416612
