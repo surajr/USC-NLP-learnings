@@ -1,0 +1,39 @@
+Assignment 3 Report
+
+Name: Suraj Rajasekhar
+
+1. If you included files other than baseline_crf.py, advanced_crf.py, evaluate_model.py, and hw3_corpus_tool.py, or modified hw3_corpus_tool.py please describe what the files do and/or your modifications to hw3_corpus_tool.py.
+
+No
+
+2. Describe how you evaluated your baseline and advanced features
+
+Manually selected the random 75% of labeled data as Training set and remaining 25% files as testing set. 
+Trained the model based on the features constructed as given in the assignment. For evaluation, we are using accuracies as the measure.
+
+For baseline features, all the 4 features are constructed as given in the assignment.
+For advanced, several different features are constructed as explained below.
+
+I also evaluated my model using k fold cros validation and evaluated the accuracy by dividing the correctly predicted act_tags with the total number of act_tags . 
+
+3. Describe your advanced feature set.
+
+Use of Bigrams on every token & POS tag of utterance - a pair of consecutive written units such as letters, syllables, or words
+Removal of Stop words {'a-','the-','an-','in-','to-','a','the','an','in','to',',','.'}
+a feature for whether or not the speaker has changed in comparison with the previous utterance
+a feature marking the first utterance of the dialogue.
+a feature for every token in the utterance
+a feature for every part of speech tag in the utterance
+
+4. If you tried alternate advanced feature sets, please describe them.
+I tried different approaches. My Advance feature set includes baseline features plus one of the below.
+a. removal of stop words
+b. Use of Bigrams on tokens and POS tags
+c. use of Trigrams on tokens and POS tags
+d. use of Stop words + bigrams
+e. Use of stop words + trigrams
+
+But accuracies were better when used with stopwords + bigrams on tokens and POS tags
+
+5. Accuracy of baseline features was: 71.16
+6. Accuracy of advanced features was: 73.85
